@@ -9,25 +9,55 @@
                 float: right;
             }
 
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                
+                
+            }
+
             form {
-                text-align: center;
-                display: block;
-                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+
+            input[type=text] {
+                width: 100%;
+                padding: 12px 40px;
+                border-radius: 40px;
+            }
+
+            input[type=submit] {
+                
+                border-radius: 20px;
             }
 
         </style>
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q"><br>
-            <input type="submit" value="Google Search">
-        </form>
-
         <div id = "menuLinks">
             <a href="image.html">Images</a>
             <a href="advanced.html">Advanced Search</a>
 
         </div>
+        <div class="container">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q"><br>
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
+        
+
+        
         
     </body>
 </html>
